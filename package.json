@@ -1,0 +1,30 @@
+{
+  "name": "speedcompendium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha",
+    "start": "nodemon src/index.js",
+    "pretest": "npx eslint test/*.js src/*.js src/*/*.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.19"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-fuzzy": "^1.6.1",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "mocha": "^8.0.1",
+    "nodemon": "^2.0.4",
+    "nyc": "^15.1.0"
+  }
+}
